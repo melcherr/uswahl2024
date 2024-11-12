@@ -1,0 +1,120 @@
+/*-- scss:defaults --*/
+
+// Primary Variables
+$primary-color: #003c5f;
+$secondary-color: #f9f7f6;
+$background-color: #ffffff;
+$text-color: #333333;
+$accent-color: #e37222;
+
+/*-- scss:rules --*/
+
+.reveal {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+// Title Slide
+.reveal h1 {
+  font-size: 1.7em;
+  color: $primary-color;
+  background-color: lighten($background-color, 10%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.reveal h2 {
+  font-size: 1.2em;
+  color: $primary-color;
+  background-color: lighten($background-color, 10%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.reveal h3 {
+  font-size: 1em;
+  color: $text-color;
+  background-color: lighten($background-color, 10%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+// Slide Content
+.reveal h1, .reveal h2 {
+  color: $primary-color;
+}
+
+ul {
+    font-size: 0.7em; /* Ändere die Schriftgröße nach Bedarf */
+    padding-left: 50px;
+
+}
+
+.reveal p {
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+
+.reveal .slides {
+  margin-top: 0.5em;
+  overflow: hidden;
+}
+
+// Footer
+.reveal .footer {
+  background-color: $secondary-color;
+  color: #003c5f;
+  padding: 10px;
+}
+
+.reveal .toc {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  /* Additional styling as needed */
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  font-size: 0.6em;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color:$primary-color;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+pre, .cell-output {
+    overflow: hidden;
+}
+
+.smaller-list {
+  
+    font-size: 0.5em;
+}
+
+.small-list {
+  
+    font-size: 0.7em;
+}
